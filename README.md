@@ -21,4 +21,4 @@ Per qualsiasi informazione ulteriore consultare il manuale introduttivo di Squea
 
  
 
---------------------------- LADY TERYL CORPORATION --------------------------------------------------------------------------------
+--------------------------- LADY TERYL CORPORATION -----------------------------------------------------------------
