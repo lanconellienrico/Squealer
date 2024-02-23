@@ -1,0 +1,223 @@
+html{
+  background-color: rgb(25, 0, 25);
+  text-align: center;
+  overflow-y: hidden;
+}
+body{
+  margin: 0px;
+  text-align: center;
+  font-family: 'Benguiat', serif;
+}
+h1{
+  color: yellow;
+  font-size: 36px;
+  font-weight: lighter;
+  letter-spacing: 0.75px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px black;
+}
+h1:hover{
+  cursor: default;
+}
+.button{
+  font-size: 16px;
+  border: 0;
+  padding: 7.5px;
+  border-radius: 2.5px;
+  position:fixed;
+  left: 10px;
+  top: 10px;
+  font-family: 'Benguiat', serif;
+  background-color: rgb(200, 0, 0);
+  transition: 0.25s background-color;
+  color: white;
+}
+.button:hover{
+  background-color: rgb(240, 0, 0);
+}
+.button:active{
+  transform: scale(0.95);
+}
+.textField{
+  width: 165px;
+  padding: 4px 7.5px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+}
+.textField:hover{
+  box-shadow: 0 0 5px rgb(170, 130, 0);
+}
+.textField:focus{
+  border: 0.5px solid rgb(40, 0, 40);
+  outline: none;
+  box-shadow: 0px 0px 10px rgb(180, 140, 10);
+}
+.textField::placeholder{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-style: italic;
+}
+.option{
+  padding: 3.5px;
+  padding-left: 0px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+}
+.option:hover{
+  box-shadow: 0.5px 0.5px 2px gray;
+}
+.option:focus{
+  border: 0.5px solid gray;
+  outline: none;
+  box-shadow: 0px 0px 2.5px gray;
+}
+#filtra{
+  margin: auto;
+  text-align :left;
+  margin-bottom: 20px;
+}
+.selectTitle{
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgb(255, 98, 0);
+  text-shadow: 1px 1px 3px rgb(10, 0, 10);
+}
+#box{
+  width: 85vw;
+  margin: auto;
+  height: 67.5vh;
+  padding: 25px;
+  background-color: rgb(40, 0 , 40);
+  border-radius: 5px;
+}
+#container{
+  width: 85vw;
+  height: 50vh;
+  margin: auto;
+  border-radius: 5px;
+  overflow-y: scroll;
+  transition: 0.25s box-shadow;
+}
+#container:hover{
+  box-shadow: 0 0 5px inset rgb(20, 0, 20);
+}  
+table{
+  width: 100%;
+  text-align: left;
+}
+#titleLine{
+  box-shadow: 0px 1px 2px rgb(10, 0, 10);
+}
+#sampleTr{
+  display: none;
+}
+th{
+  padding: 4px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px rgb(10, 0, 10);
+  color: rgb(255, 136, 0);
+}
+td{
+  padding: 3px;
+  color: rgb(255, 180, 0);
+  font-style: italic;
+  font-weight: lighter;
+  text-shadow: 1px 1px 2px rgb(10, 0, 10);
+  font-family: 'Times New Roman', Times, serif;
+}
+.editable{
+  padding-left: 5px;
+  transition: 0.25s background-color,  0.15s box-shadow;
+}
+.editable:hover{
+  cursor: pointer;
+  background-color: rgb(60, 0, 60);
+}
+.editable:active{
+  box-shadow: 0 0 5px inset rgb(10, 0, 10);
+}
+.hiddenInput{
+  position:relative;
+  bottom: 78vh;
+  left: 70vw;
+}
+.radioButtons{
+  accent-color: red;
+}
+#inputModifiche{
+  position: relative;
+  width: 80vw;
+  margin: auto;
+  margin-top: 10px;
+  text-align: right;
+}
+.newReaction{
+  width: 2.5vw;
+  text-align: right;
+}
+#submitChanges{
+  position: inherit;
+  margin-right: 15px;
+}
+#questionMark:hover{
+  cursor: help;
+}
+.body{
+  width: 30vw;
+}
+.canaliDest{
+  width: 5vw;
+}
+.sexyData{
+  width: 12vw;
+}
+
+
+
+
+
+  
+/** footer **/
+footer{
+  position: fixed;
+  width: 100%;
+  top: 97%;
+  z-index: -1;
+}
+#corp{
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+  margin: auto;
+  text-align: center;
+}
+#corp:hover{
+  cursor: default;
+}
+
+/*scrollbar's shit
+* width
+*/
+::-webkit-scrollbar {
+  width: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.30);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.4);
+}
+/* color of the tracking area */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.25);
+}

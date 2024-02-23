@@ -1,0 +1,264 @@
+html{
+  background-color: rgb(25, 0, 25);
+  text-align: center;
+}
+body{
+  margin: 0px;
+  text-align: center;
+  font-family: 'Benguiat', serif;
+}
+h1{
+  color: yellow;
+  font-size: 36px;
+  font-weight: lighter;
+  letter-spacing: 0.75px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 3px black;
+}
+h1:hover{
+  cursor: default;
+}
+.button{
+    font-size: 16px;
+    border: 0;
+    padding: 7.5px;
+    border-radius: 2.5px;
+    position:fixed;
+    left: 10px;
+    top: 10px;
+    font-family: 'Benguiat', serif;
+    background-color: rgb(200, 0, 0);
+    transition: 0.25s background-color;
+    color: white;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(240, 0, 0);
+}
+.button:active{
+    transform: scale(0.95);
+}
+.textField{
+    width: 165px;
+    padding: 5.5px 7.5px;
+    border-radius: 2.5px;
+    border: 0.5px solid gray;
+    transition: 0.25s;
+}
+.textField:hover{
+  box-shadow: 0 0 5px rgb(170, 130, 0);
+}
+.textField:focus{
+    border: 0.5px solid rgb(40, 0, 40);
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(180, 140, 10);
+}
+.textField::placeholder{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+}
+.box{
+    position: fixed;
+    top: 8vh;
+    width: 40vw;
+    margin: 5vw;
+    height: 75vh;
+    background-color: rgb(40, 0 , 40);
+    border-radius: 5px;
+}
+#newChannelForm{
+    right: 10px;
+    height: 50vh;
+}
+.title{
+    font-weight: lighter;
+    color: rgb(255, 136, 0);
+    text-shadow: 1px 1px 3px rgb(20, 0, 20); 
+}
+.title:hover{
+    cursor: default;
+}
+#channelContainer{
+    height: 15vh;
+    text-align: left;
+    padding-left: 10px;
+}
+.channelRadio{
+    width: 16px;
+    height: 16px;
+    accent-color: red;
+}
+.channels{
+    color: rgb(255, 255, 70);
+    font-size: 18px;
+    margin: 0px;
+    padding: 4px;
+    text-shadow: 1px 1px 2px rgb(15, 0, 15);
+}
+.container{
+    width: 25vw;
+    height: 18vh;
+    margin: auto;
+    padding: 5px;
+    border-radius: 3px;
+    overflow-y: scroll;
+    transition: 0.25s box-shadow;
+}
+.container:hover{
+    box-shadow: 0 0 5px inset rgb(20, 0, 20);
+}
+#azioni{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.radio{
+    width: 15px;
+    height: 15px;
+    accent-color: red;
+}
+.labelRadio{
+    font-size: 19px;
+    letter-spacing: 0.7px;
+}
+.descrizione{
+    margin:auto;
+    margin-top: 10px;
+    width: 25vw;
+}
+.descrizioneTitle{
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    text-shadow: 1px 1px 2px rgb(18, 0, 18);
+    color: rgb(255, 166, 0);
+}
+.inputText{
+    margin: auto;
+    margin-top: 10px;
+    width: 21vw;
+}
+#submitChange{
+    margin-top: 5px;
+    position: relative;
+}
+#submitNewChannel{
+    margin-top: 30px;
+    position:relative;
+}
+#nuovoCanale{
+    margin-top: 40px;
+}
+#nuovaDescrizione{
+    margin-top: 40px;
+}
+#squealContainer{
+    width: 36vw;
+}
+.squealInfo{
+    margin: 0px;
+    padding:4px;
+    border-top-left-radius: 2.5px;
+    text-align: left;
+    padding-left: 7.5px;
+    border-top-left-radius: 2.5px;
+    border-top-right-radius: 2.5px;
+    background-color: rgb(68, 0, 68);
+}
+.squealText{
+    position: relative;
+    top: -15px;
+    width: 85%;
+    margin: 0px;
+    padding: 6px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1.3px 1.3px 2.4px rgb(15, 0, 15);
+}
+.squeals{
+    color: white;
+    margin: 5px;
+    border-radius: 2.5px;
+    background-color: rgb(114, 0, 114);
+    transition: 0.4s box-shadow;
+}
+.squeals:hover{
+    box-shadow: 0 0 7px rgb(255, 200, 17);
+}
+.radioSquilli{
+    position:relative;
+    margin-left: 90%;
+    top: 10px;   
+    width: 18px;
+    height: 18px;
+    accent-color: red;
+}
+#aiutino{
+    color: rgb(255, 142, 14);
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-shadow: 1px 1px 2px rgb(10, 0 ,10);
+}
+#descrizione{
+    margin-bottom: 15px;
+}
+#channelSample{
+    display: none;
+}
+#squealSample{
+    display: none;
+}
+.sexyData{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    letter-spacing: -1px;
+    position: relative;
+    left: 10vw;
+}
+
+
+
+
+
+
+/** footer **/
+footer{
+    position: fixed;
+    width: 100%;
+    top: 97%;
+    z-index: -1;
+}
+#corp{
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+  margin: auto;
+  text-align: center;
+}
+#corp:hover{
+  cursor: default;
+}
+
+/*scrollbar's shit
+* width
+*/
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.5);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.30);
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.4);
+  }
+  /* color of the tracking area */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.25);
+  }

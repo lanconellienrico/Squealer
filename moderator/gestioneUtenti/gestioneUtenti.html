@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="gestioneUtenti.css">
+    <link href="https://fonts.cdnfonts.com/css/benguiat" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/benguiat');</style>
+    <script type="text/javascript" src="./gestioneUtenti.js"></script>
+    <title>Moderator-Squillo</title>
+  </head>
+  <body>
+    <header>
+      <h1>GESTIONE UTENTI</h1>
+    </header>
+    <button id="back" class="button">M E N U</button>
+    <form onsubmit="return false" id="box">
+      <div id="filtra">
+        <label for="filterOption" id="filtriTitle" class="selectTitle">Filtra per: </label>
+        <select id="filterOption" class="option">
+          <option value="username">Username</option>
+          <option value="usertype">Usertype</option>
+          <option value="popolarity">Popolarità</option>
+        </select>
+        <input type="text" id="filterText" class="textField" placeholder="filtra per autore...">
+      </div>
+      <div id="container">
+        <table id="table">
+          <tr id="titleLine">
+            <th>Username</th>
+            <th>Password</th>
+            <th>Usertype</th>
+            <th>DayQ</th>
+            <th>WeekQ</th>
+            <th>MonthQ</th>
+            <th>N Squeal</th>
+            <th title="seleziona per modificare" id="questionMark">?</th>
+          </tr>
+          <tr id="sampleTr">
+            <td class="username">fricco</td>
+            <td class="password">pasticcio</td>
+            <td class="usertype">plain</td>
+            <td class="dayQ editable" title="modifica">150</td>
+            <td class="weekQ editable" title="modifica">1000</td>
+            <td class="monthQ editable" title="modifica">3500</td>
+            <td class="squeal">44</td>
+            <td class="seleziona"><input name="radioUser" class="radioButtons" type="radio" required></td>
+          </tr>
+        </table>
+      </div>
+      <div id="inputModifiche">
+        <label for="selectBlockType" class="selectTitle">Modifica: </label>
+        <select class="option" id="selectBlockType" title="scegli il tipo di destinatario">
+          <option value="peace">Lascia in Pace</option>
+          <option value="block">Blocca</option>
+          <option value="unblock">Sblocca</option>
+        </select>
+        <input type="number" class="textField" id="newQuote" placeholder="cambia quota">
+        <button class="button" id="submitChanges">I N V I A</button>
+      </div>
+    </form>
+    <footer>
+      <p id='corp'>LADY TERYL CORPORATION©</p>
+    </footer>
+  </body>
+</html>

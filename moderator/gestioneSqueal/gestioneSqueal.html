@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="gestioneSqueal.css">
+    <link href="https://fonts.cdnfonts.com/css/benguiat" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/benguiat');</style>
+    <script type="text/javascript" src="./gestioneSqueal.js"></script>
+    <title>Moderator-Squillo</title>
+  </head>
+  <body>
+    <header>
+      <h1>GESTIONE SQUEAL</h1>
+    </header>
+    <button id="back" class="button">M E N U</button>
+    <form method="PUT" onsubmit="return false" id="box">
+      <div id="filtra">
+        <label for="filterOption" id="filtriTitle" class="selectTitle">Filtra per: </label>
+        <select id="filterOption" class="option">
+          <option value="author">Autore</option>
+          <option value="data">Data</option>
+          <option value="destinatari">Destinatari</option>
+        </select>
+        <input type="text" id="filterText" class="textField" placeholder="filtra per autore...">
+      </div>
+      <div id="container">
+        <table id="table">
+          <tr id="titleLine">
+            <th>Data</th>
+            <th>Autore</th>
+            <th>Body</th>
+            <th>Type</th>
+            <th>Destinatari</th>
+            <th>Canali</th>
+            <th>O.o</th>
+            <th>>.></th>
+            <th title="seleziona per modificare" id="questionMark">?</th>
+          </tr>
+          <tr id="sampleTr">
+            <td class="sexyData">la data</td>
+            <td class="author">l'autore</td>
+            <td class="body">il body scritto con tanto amore</td>
+            <td class="bodytype">Text</td>
+            <td class="destinatari editable" title="modifica">@avvocato</td>
+            <td class="canaliDest editable" title="modifica">§canaletto</td>
+            <td class="ammiro editable" title="modifica">3</td>
+            <td class="disgusto editable" title="modifica">2</td>
+            <td class="seleziona"><input name="radioSquilli" class="radioButtons" type="radio" required></td>
+          </tr>
+        </table>
+      </div>
+      <div id="inputModifiche">
+        <label for="selectDestinatarioType" class="selectTitle">Modifica: </label>
+        <select class="option" id="selectDestinatarioType" title="scegli il tipo di destinatario">
+          <option value="user">@User</option>
+          <option value="channel">§Canale</option>
+        </select>
+        <input type="text" class="textField" id="newDestinatari" placeholder="aggiungi destinatario">
+        <input type="text" class="textField newReaction" id="newAmmiro" title="newValue" placeholder="...">
+        <input type="text" class="textField newReaction" id="newDisgusto" title="newValue" placeholder="..."><br>
+        <button class="button" id="submitChanges">I N V I A</button>
+      </div>
+    </form>
+    <footer>
+      <p id='corp'>LADY TERYL CORPORATION©</p>
+    </footer>
+  </body>
+</html>

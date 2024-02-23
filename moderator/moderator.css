@@ -1,0 +1,119 @@
+html{
+  background-color: rgb(25, 0, 25);
+  text-align: center;
+  overflow-y: hidden;
+}
+body{
+  margin: 0px;
+  text-align: center;
+  font-family: 'Benguiat', serif;
+}
+h1{
+  color: yellow;
+  font-size: 36px;
+  font-weight: lighter;
+  letter-spacing: 0.75px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 3px black;
+}
+h1:hover{
+  cursor: default;
+}
+h2{
+    margin-top: 0;
+    color: rgb(255, 85, 0);
+    letter-spacing: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-shadow: 1px 1px 3px rgb(10, 0, 10);
+    margin-bottom: 15vh;
+}
+#img{
+    background-image: url("../client/pics/pinkSqueal.png");
+    background-size: 100%;
+    width: 250px;
+    height: 125px;
+    margin: auto;
+}
+.labels{
+  color: rgb(250, 0, 0);
+  text-shadow: 1px 1px 2.5px black;
+  font-size: 24px;
+
+}
+.textField{
+  width: 165px;
+  padding: 4px 7.5px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+}
+.textField:hover{
+  box-shadow: 0 0 5px rgb(170, 130, 0);
+}
+.textField:focus{
+  border: 0.5px solid rgb(40, 0, 40);
+  outline: none;
+  box-shadow: 0px 0px 10px rgb(180, 140, 10);
+}
+.textField::placeholder{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+}
+#login{
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+}
+.box{
+    padding: 10px;
+}
+button{
+    border: 1px solid rgb(25, 0, 25);
+    border-radius: 2.5px;
+    padding: 5px 7.5px;
+    font-size: 15px;
+    font-family: 'Benguiat', serif;
+    color: rgb(30, 0, 0);
+    font-weight: 600;
+    transition: 0.25s box-shadow;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px orange;
+}
+button:active{
+    transform: scale(0.95);
+}
+#submitButton{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+  
+/** footer **/
+footer{
+    position: fixed;
+    width: 100%;
+    top: 97%;
+    z-index: -1;
+}
+#corp{
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+  margin: auto;
+  text-align: center;
+}
+#corp:hover{
+  cursor: default;
+}
+  

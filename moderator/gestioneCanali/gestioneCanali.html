@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./gestioneCanali.css">
+    <link href="https://fonts.cdnfonts.com/css/benguiat" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/benguiat');</style>
+    <script type="text/javascript" src="./gestioneCanali.js"></script>
+    <title>Moderator-Squillo</title>
+  </head>
+  <body>
+    <header>
+      <h1>GESTIONE CANALI</h1>
+    </header>
+    <button id="back" class="button">M E N U</button>
+    <form id="canaliPanel" class="box" onsubmit="return false">
+        <h2 class="title">ELENCO CANALI</h2>
+        <div id="channelContainer" class="container">
+            <p id="channelSample" class="channels">
+                <input type="radio" class="channelRadio" id="radioSample" name="radioCanali" required>
+                <label for="radioSample" class="nomiCanali">§CANALE_UFFICIALE</label> 
+            </p>
+        </div>
+        <div id="azioni">
+            <label for="modifica" class="title labelRadio">MODIFICA</label>
+            <input type="radio" name="scelta" class="radio" id="modifica" value="MODIFICA" required> 
+            <label for="elimina" class="title labelRadio">ELIMINA</label>
+            <input type="radio" name="scelta" class="radio" id="elimina" value="ELIMINA"> 
+        </div>
+        <div id="descrizione" class="descrizione">
+            <label id="cambiaDescTitle" class="descrizioneTitle" for="changeDescription">cambia descrizione</label>
+            <input type="text" class="textField inputText" id="changeDescription" placeholder="... new wind blows ...">
+        </div>
+        <span id="aiutino">seleziona squeal da rimuovere</span>
+        <div id="squealContainer" class="container">
+            <div id="squealSample" class="squeals">
+                <p class="squealInfo" id="squealInfoSample">Dante Durante<span class="sexyData"></span></p>
+                <input type="radio" name="squilliButton" class="radioSquilli" id="radioSquilliSample"> 
+                <p class="squealText" id="squealTextSample"><label class="innerText">
+                    che poi l'altro giorno stavo pensando, fico che la mattina ti svegli, no?
+                </label>
+                </p>
+                  
+            </div>
+        </div>
+        <button id="submitChange" class="button">I N V I A</button>
+    </form>
+    <form method="POST" class="box" id="newChannelForm" onsubmit="return false">
+        <h2 class="title">CREA UN NUOVO CANALE</h2>
+        <div id="nuovoCanale" class="descrizione">
+            <label id="newChannelTitle" class="descrizioneTitle" for="newTitle">BATTEZZA UN NOME:</label>
+            <input type="text" class="textField inputText" id="newTitle" placeholder="...un nome importante, altisonante, ..." required="required">
+        </div>
+        <div id="nuovaDescrizione" class="descrizione">
+            <label id="newDescTitle" class="descrizioneTitle" for="newDescription">aggiungi descrizione</label>
+            <input type="text" class="textField inputText" id="newDescription" placeholder="... parrots whistle ...">
+        </div>
+        <button id="submitNewChannel" class="button">C R E A</button>
+    </form>
+    <footer>
+      <p id='corp'>LADY TERYL CORPORATION©</p>
+    </footer>
+  </body>
+</html>
