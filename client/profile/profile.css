@@ -1,0 +1,614 @@
+html{
+  background-image: url("../pics/v-shadow.jpg");
+  background-size: 100%;
+  text-align: center;
+}
+body{
+  margin: 0px;
+  text-align: center;
+  padding-bottom: 75%;
+  margin-bottom: 400px;
+  font-family: 'Benguiat', serif;
+}
+header{
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(0,0,0,0.25);
+}
+h1{
+  margin:auto;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 0.5vw;
+  color: white;
+  text-shadow: 1.5px 1.5px 2px black;
+  border-radius: 5px;
+}
+h1:hover{
+  cursor:default;
+}
+#logoutButton{
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+h2{
+  margin:auto;
+  color: white;
+  font-size: 28px;
+  font-weight: lighter;
+  text-shadow: 1.5px 1.5px 2px black;
+}
+#logo{
+  float:left;
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+  background-image: url('../pics/logowhiteshadow.png');
+  background-size: 100%;
+}
+#logo:hover{
+  cursor: pointer;
+}
+#dati{
+  width: 60%;
+  height: 30%;
+  padding: 15px;
+  margin-left: 18.5vw;
+  margin-top: 75px;
+  border-radius: 5px;
+  transition: 0.25s;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+#dati:hover{
+  box-shadow: 0 0 5px inset rgb(50, 50, 50);
+  background-color: rgba(120, 120, 120, 0.8);
+}
+#datiTag{
+  text-align: left;
+}
+.dati{
+  color:white;
+  font-size: 20px;
+  margin-left: 20px;
+  text-shadow: 1px 1px 3px black; 
+}
+.datiForm{
+  width: 250px;;
+  color:white;
+  font-size: 16px;
+  margin-left: 5%;
+  font-weight: lighter;
+  letter-spacing: 0.4px;
+  text-shadow: 1px 1px 3px black; 
+}
+.action{
+  width: 29%;
+  padding: 15px;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  border-radius: 5px;
+  transition: 0.25s;
+  background-color: rgba(100, 100, 100, 0.5);
+
+  margin-top: 20px;
+  margin-left: 18.5vw;
+}
+.action:hover{
+  cursor: default;
+  box-shadow: 0 0 5px inset rgb(50, 50, 50);
+  background-color: rgba(120, 120, 120, 0.8);
+}
+.passwordError{
+  visibility: hidden;
+  font-size: 13px;
+  font-family: serif;
+  color: rgb(220, 0, 0);
+  text-shadow: 0 0 3px red;
+  position: absolute;
+}
+#errorPassword{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#errorNewPassword{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#pwdInputText{
+  width: 163px;
+}
+.passwordPar{
+  height: 50px;
+  width: 400px;
+  margin: auto;
+}
+.magicWindow{
+  display: none;
+  padding-bottom: 20px;
+}
+#passwordTitle{
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.seePassword{
+  z-index: 1;
+  /*visibility: hidden;*/
+  opacity: 0.5; 
+  width: 17.5px;
+  height: 17.5px;
+  position: relative;
+  left: 269px;
+  bottom: 21px;
+  background-image: url('../pics/eye.png');
+  background-size: 100%;
+  transition: 0.25s opacity;
+}
+.seePassword:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
+.textField{
+  /*position: relative;
+  bottom: 35px;*/
+  width: 165px;
+  padding: 4px 7.5px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+}
+.textField:hover{
+  box-shadow: 1px 1px 5px rgb(70, 70, 70);
+}
+.textField:focus{
+  border: 0.5px solid gray;
+  outline: none;
+  box-shadow: 1px 1px 5px rgb(70, 70, 70), -0.5px -0.5px 1px rgb(80, 80, 80), -0.5px 0.5px 1px rgb(80, 80, 80), 0.5px -0.5px 1px rgb(80, 80, 80);
+}
+.actions{
+  color: white;
+  font-size: 24px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 3px black; 
+}
+.actions:hover{
+  cursor: pointer;
+}
+button{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 7.5px 10px;
+  font-size: 15px;
+  font-family: 'Benguiat', serif;
+  color: rgba(0,0,0,0.8);
+  font-weight: 600;
+  transition: 0.25s box-shadow;
+}
+button:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 5px purple, -1px -1px 5px purple, -1px 1px 5px purple, 1px -1px 5px purple;
+}
+button:active{
+  transform: scale(0.95);
+}
+#changePassword{
+  margin-top: 20px;
+}
+.chiudiFinestra{
+  z-index: 1;
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-top-right-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
+  margin: 0px;
+  margin-left: 58.5%;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  font-family: sans-serif;
+  transition: 0.25s background-color;
+  text-shadow: 1px 1px 3px black;
+}
+.chiudiFinestra:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0, 0.4);
+}
+.chiudiFinestra:active{
+  box-shadow: 0 0 6px inset rgb(25, 25, 25);
+}
+.chiudiFinestraText{
+  position: relative;
+  bottom: 10px;
+}
+#chooseSquealFormat{
+  padding: 3.5px;
+  padding-left: 0px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+}
+#chooseSquealFormat:hover{
+  box-shadow: 0.5px 0.5px 2px gray;
+}
+#chooseSquealFormat:focus{
+  border: 0.5px solid gray;
+  outline: none;
+  box-shadow: 0.5px 0.5px 2px gray, -0.5px -0.5px 1px gray, -0.5px 0.5px 1px gray, 0.5px -0.5px 1px gray;
+}
+#squealBody{
+  padding: 5px;
+  border-radius: 3.5px;
+  width: 50%;
+  height: 100px;
+  resize: none;
+  font-family: 'Benguiat', serif;
+  letter-spacing: 0.25px;
+  font-size: 14px;
+}
+.radioButtons{
+  accent-color: purple;
+}
+.radioButtons:hover{
+  accent-color: rgb(150, 0, 150);
+}
+.radioOptionTitle{
+  margin-left: 0;
+}
+#destinatariField{
+  width: 330px;
+  margin: auto;
+  padding-bottom: 5px;
+  border-radius: 2.5px;
+  transition: 0.25s box-shadow;
+}
+.destinatariButton{
+  width: 25px;
+  height: 25px;
+  padding: 0px;
+}
+.destinatari{
+  margin: 7.5px;
+  margin-bottom: 2.5px;
+}
+#destinatarioTitle{
+  margin: 0px;
+}
+.nuovoSquealLettura{
+  z-index: 1;
+  color: white;
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px black;
+  background-color: rgb(100, 100, 100);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  transition: 0.25s box-shadow;
+}
+.nuovoSquealLettura:hover{
+  box-shadow: 2px 2px 4px rgb(10,10,10);
+}
+.leggiSquealAuthor{
+  padding: 10px;
+  padding-left: 15px;
+  padding-bottom: 0;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: 'Benguiat', serif;
+  text-shadow: 1px 1px 3px black;
+  background-color: rgb(65, 65, 65);
+  /*background-color: rgb(90, 30, 90); non letto */
+  transition: 5s background-color;
+}
+.dataLeggiSqueal{
+  margin: 0px;
+  padding: 2.5px;
+  padding-top: 0;
+  text-align: right;
+  background-color: rgb(65, 65, 65);
+  /*background-color: rgb(90, 30, 90); non letto */
+  transition: 5s background-color;
+}
+.leggiSquealBody{
+  padding: 15px;
+  margin: 0px;
+  text-align: justify;
+  background-color: rgb(90,90,90);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px ;
+  /*background-color: rgb(120, 70, 120); non letto */
+  transition: 5s background-color;
+}
+#magicLeggiSqueal{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 500px;
+  padding: 10px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: rgba();
+  transition: 0.25s box-shadow;
+} 
+#magicLeggiSqueal:hover{
+  box-shadow: 0 0 3px inset rgb(25, 25, 25);
+}
+#zeroSqueal4u{
+  display: none;
+  color: white;
+  font-size: 22px;
+  text-shadow: 1px 1px 3px black;
+}
+.nuovoMessaggioTag{
+  visibility: hidden;
+  opacity: 1;
+  z-index :1;
+  width: 200px;
+  height: 0px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2.5px black;
+  margin: 0px;
+  position: relative;
+  left: 70%;
+  bottom: 22px;
+  transition: 3s visibility, 3s opacity linear;
+}
+#leggiSquealSample{
+  display: none;
+}
+.quoteToBuy{
+  width: 40px;
+  text-align: right;
+}
+.canaliDaIscriversi{
+  accent-color: purple;
+}
+#contieniIscriversi{
+  padding-left: 10px;
+  overflow-y: scroll;
+  width: 27vw;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.canale{
+  margin-left: 0px;
+}
+#contieniIscritti{
+  padding-left: 10px;
+  width: 25vw;
+  overflow-y: scroll;
+  position: relative;
+  bottom: 0px;
+  left: 33vw;
+}
+#elencoCanaliTitle{
+  margin-top: 0px;
+  margin-bottom: 15px;
+  width: 60vw;
+  text-align: left;
+}
+#leMieIscrizioni{
+  margin-left: 12vw;
+  margin-bottom: 0px;
+}
+#compraQuotaSubmit{
+  letter-spacing: 0.7px;
+}
+#inputChannelName{
+  position: relative;
+  right: 22px;
+}
+.channelContainers{
+  border-radius: 2.5px;
+  transition: 0.25s box-shadow;
+}
+.channelContainers:hover{
+  box-shadow: 0 0 3px inset rgb(50, 50, 50);
+}
+.elencoCanaliIscriviti{
+  text-align: left;
+  padding: 5px;
+  margin:0px;
+}
+.canaleIscritto{
+  text-align: left;
+  margin: 7px;
+}
+#elencoGestisciCanaliTitle{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: left;
+}
+#contieniGestisciCanali{
+  width: 18vw;
+  padding: 10px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.canaliDaGestire{
+  accent-color: purple;
+}
+.elencoGestisciCanali{
+  margin: 0;
+}
+#elencoGestisciCanaliTitle{
+  width: 65vw;
+}
+#questioneUsernameTitle{
+  margin-left: 10vw;
+}
+#privilegeTitle{
+  margin-left: 10vw;
+}
+#gestisiCanaliWindowTitle{
+  margin-bottom: 10px;  
+}
+#gestisciCanaliInputUsername{
+  position: relative;
+  bottom: 12px;
+  left: 7px;
+}
+#gestisciCanaliInputUsername::placeholder{
+  font-size: 14px;
+  font-style: italic;
+  font-family: Serif;
+}
+input[name="radioPrivilege"] {
+  accent-color: purple;
+}
+#radioContainer{
+  width: 18vw;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(25, 25, 25);
+  text-align: right;
+  padding-right: 5px;
+  letter-spacing: 0.8px;
+  position: relative;
+  bottom: 70px;
+  left: 41vw;
+}
+#channelIscriviti{
+  display: none;
+}
+#iscrivitiCanaliSubmit{
+  margin-top: 20px;
+}
+.privilegiLabel{
+  transition: 0.25s text-shadow;
+}
+.privilegiLabel:hover{
+  text-shadow: 1px 1px 7px rgb(90, 0 ,90), -1px -1px 7px rgb(90, 0 ,90);
+}
+#contieniTestoGestisciCanali{
+  width: 18vw;
+  position: relative;
+  left: 21vw;
+  bottom: 25px;
+}
+#channelGestione{
+  display: none;
+}
+.mentionLink{
+  text-decoration: none;
+  color: rgb(235, 50, 235);
+  font-family: Serif;
+  font-style: italic;
+  transition: 0.5s text-shadow;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgb(25, 25, 25);
+}
+.mentionLink:hover{
+  cursor: pointer;
+  text-shadow: 0 0 10px rgb(240, 100, 240), 1px 1px 3px black;
+}
+.mentionChannel{
+  color: rgb(180, 95, 250);
+}
+.mentionChannel:hover{
+  text-shadow: 0 0 10px rgb(200, 120, 240);
+}
+#mentionInfo{
+  position:fixed;
+  color: white;
+  opacity: 0;
+  padding: 5px;
+  text-align: justify;
+  width: 18vw;
+  height: 150px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  background-color: rgb(40,40,40);
+  box-shadow: 0px 0px 5px rgb(10,10,10);
+  text-shadow: 1px 1px 2px rgb(15, 15, 15);
+  transition: 1s opacity;
+}
+.spanMention{
+  font-size: 20px;
+  text-align: center;
+}
+#menInfDesc{
+  display: none;
+}
+#menInfType{
+  display: none;
+}
+#noInfoMention{
+  display: none;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-wrap: wrap;
+  font-weight: 200;
+  font-style: italic;
+  text-align: left;
+}
+#mentionInfoDescrizione{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+
+
+
+/** footer **/
+footer{
+  position: fixed;
+  width: 100%;
+  top: 97%;
+}
+#corp{
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+  margin: auto;
+  text-align: center;
+}
+#corp:hover{
+  cursor: default;
+}
+
+
+/*scrollbar's shit
+* width
+*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.30);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.4);
+}
+/* color of the tracking area */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.25);
+}
+
+/*
+
+background-color: rgb(200, 200, 200);
+opacity: 0.8;
+background: linear-gradient(135deg, gray 25%, transparent 25%) 
+-10px 0/ 20px 20px, linear-gradient(225deg, gray 25%, transparent 25%) 
+-10px 0/ 20px 20px, linear-gradient(315deg, gray 25%, transparent 25%)
+ 0px 0/ 20px 20px, linear-gradient(45deg, gray 25%, gray 25%) 0px 0/ 20px 20px;
+
+ */

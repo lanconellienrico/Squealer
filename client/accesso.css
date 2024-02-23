@@ -1,0 +1,193 @@
+html{
+  background-image: url("./pics/v-shadow.jpg");
+  background-size: 100%;
+  text-align: center;
+}
+body{
+  margin: 0px;
+  text-align: center;
+  padding-bottom: 100%;
+  font-family: 'Benguiat', serif;
+}
+header{
+  opacity: 0.5;
+  overflow: visible;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.25);
+  font-size: 18px;
+  color: white;
+  text-shadow: 1.5px 0.5px 2px black;
+  transition: 0.2s background-color;
+}
+header:hover{
+  opacity: 1;
+  background-color: rgba(0,0,0,0.40);
+}
+#textHeader{
+  margin-right: 20px;
+}
+button{
+  letter-spacing: 0.6px;
+  border: 1px solid gray;
+  border-radius: 2.5px;
+  padding: 5px 7.5px;
+  font-size: 15px;
+  font-family: 'Benguiat', serif;
+  color: rgba(0,0,0,0.7);
+  font-weight: 600;
+  transition: 0.25s box-shadow;
+}
+button:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 5px purple, -1px -1px 5px purple, -1px 1px 5px purple, 1px -1px 5px purple;
+}
+button:active{
+  transform: scale(0.95);
+}
+h1{
+  margin:auto;
+  margin-top: 100px;
+  width: 400px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 48px;
+  letter-spacing: 25px;
+  color: white;
+  text-shadow: 1.5px 1.5px 2px black;
+  border-radius: 5px;
+}
+h1:hover{
+  cursor:default;
+}
+form{
+  padding: 15px;
+}
+label{
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  margin-right: 10px;
+  color: white;
+  text-shadow: 1.5px 0.5px 2px black;
+}
+input::placeholder{
+  font-size: 13px;
+  font-style: oblique;
+  font-family: serif;
+}
+input[type=text]{
+  padding: 4px 7.5px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+  margin-bottom: 5px;
+}
+input[type=text]:hover{
+  box-shadow: 0.5px 0.5px 2px gray;
+}
+input[type=text]:focus{
+  border: 0.5px solid gray;
+  outline: none;
+  box-shadow: 0.5px 0.5px 2px gray, -0.5px -0.5px 1px gray, -0.5px 0.5px 1px gray, 0.5px -0.5px 1px gray;
+}
+input[type='password']{
+  width: 150px;
+  padding: 4px 7.5px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+  padding-right: 20px;
+}
+input[type=password]:hover{
+  box-shadow: 0.5px 0.5px 2px gray;
+}
+input[type=password]:focus{
+  border: 0.5px solid gray;
+  outline: none;
+  box-shadow: 0.5px 0.5px 2px gray, -0.5px -0.5px 1px gray, -0.5px 0.5px 1px gray, 0.5px -0.5px 1px gray;
+}
+#pwdLabel{
+  margin-right: 12.5px;
+}
+.textError{
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  color: purple;
+  position: relative;
+  left: 50px;
+  visibility: hidden;
+}
+
+#submitButton{
+  font-family: 'Benguiat', serif;
+  color: rgba(0,0,0,0.8);
+  font-weight: 600;
+  padding: 5px 10px;
+  border: 0.5px solid gray;
+  border-radius: 2.5px;
+  transition: 0.25s box-shadow;
+  margin-top: 10px;
+}
+#submitButton:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 5px purple, -1px -1px 5px purple, -1px 1px 5px purple, 1px -1px 5px purple;
+}
+#submitButton:active{
+  transform: scale(0.95);
+}
+#logo{
+  display: inline-flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-image: url('./pics/logowhiteshadow.png');
+  background-size: 100%;
+  margin-bottom: 10px;
+}
+p{
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+
+
+
+/** footer **/
+footer{
+  position: fixed;
+  width: 100%;
+  top: 97%;
+}
+#corp{
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+  margin: auto;
+  text-align: center;
+}
+#corp:hover{
+  cursor: default;
+}
+
+/*scrollbar's shit
+* width
+*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.30);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.4);
+}
+/* color of the tracking area */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.25);
+}

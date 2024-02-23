@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://fonts.cdnfonts.com/css/benguiat" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/benguiat');</style>
+    <script type="text/javascript" src="./profile.js"></script>
+    <title>Squealer</title>
+  </head>
+  <body>
+    <header>
+      <div id='logo'></div>
+      <h1>Il Mio Profilo</h1>
+      <button id="logoutButton">Logout</button>
+    </header><br>
+    <div id="dati">
+      <h2 id="username"></h2><br>
+      <div id="datiTag">
+        <p class="dati" id="usertypeP">Usertype: <span id="usertype"></span></p>
+        <p class="dati" id="dQuoteP">Daily Quote: <span id="dayQ"></span></p>
+        <p class="dati" id="wQuoteP">Weekly Quote: <span id="weekQ"></span></p>
+        <p class="dati" id="mQuoteP">Monthly Quote: <span id="monthQ"></span></p>
+      </div>
+    </div>
+    <form id="passwordButton" class="action" method="PUT" onsubmit="return false">
+      <p id="chiudiFinestraPwd" class="chiudiFinestra"><span id="chiudiFinestraTextPwd" class="chiudiFinestraText">_</span></p><br>
+      <p class="actions" id="passwordTitle">Gestisci Password</p>
+      <div id="magicPassword" class="magicWindow">
+        <div class="passwordPar">
+          <p class="datiForm">password attuale: </p>
+          <input type="password" class="textField passwordTextField" maxlength="32" id="curPwd" required="required">
+          <span id="errorPassword" class="passwordError">PASSWORD ERRATA</span>
+          <div class="seePassword"></div>
+        </div><br>
+        <div class="passwordPar">
+          <p class="datiForm">nuova password: </p>
+          <div class="pwdInputText">
+            <input type="password" class="textField passwordTextField" maxlength="32" id="newPwd" required="required">
+            <span id="errorNewPassword" class="passwordError">PASSWORD UGUALI</span>
+            <div class="seePassword"></div>
+          </div>
+        </div><br>
+        <button id="changePassword" class="submitButton">Cambia Password</button>
+      </div>
+    </form>
+    <form id="newSquealForm" class="action" method="POST" onsubmit="return false">
+      <p id="chiudiFinestraSqueal" class="chiudiFinestra"><span id="chiudiFinestraTextSqueal" class="chiudiFinestraText">_</span></p><br>
+      <p class="actions" id="squealWindowTitle">Crea Nuovo Squeal</p>
+      <div id="magicSqueal" class="magicWindow">
+        <p>
+          <span class="datiForm">Visibilità: </span>
+          <label for="privateButton" class="datiForm radioOptionTitle">PRIVATO</label>
+          <input type="radio" id="privateButton" required = "required" name="visibilità" class="visibilityButton radioButtons" required>
+          <label for="publicButton" class="datiForm radioOptionTitle">PUBBLICO</label>
+          <input type="radio" id="publicButton" required = "required" name="visibilità" class="visibilityButton radioButtons">
+        </p>
+        <p>
+          <label for="chooseSquealFormat" class="datiForm">Scegli il formato: </label>
+          <select id="chooseSquealFormat">
+            <option value="Text">Testo</option>
+            <option value="Img">Immagine</option>
+            <option value="Geo">Geolocalizzazione</option>
+          </select>
+        </p>
+        <p id="contaCaratteri">
+          <label for="squealBody" class="datiForm" id="caratteriDisplay">Caratteri disponibili: 
+            <span id="caratteriUsati">0</span>/
+            <span id="caratteriDisponibili"></span>
+          </label>
+        </p>
+        <p>
+          <textarea class="textField" id="squealBody" placeholder="inserisci testo" required = "required"></textarea>
+        </p>
+        <p id="destinatariField">
+          <label for="destinatario1" class="datiForm" id="destinatarioTitle">Destinatario: </label>
+          <br>
+          <input type="text" class="textField destinatari" maxlength="32" id="destinatario1">
+          <button id="aggiungiDestinatario" class="destinatariButton">+</button>
+          <button id="rimuoviDestinatario" class="destinatariButton">-</button> 
+        </p><br>
+        <button id="submitSqueal"  class="submitButton">Crea Squeal</button>
+      </div>
+    </form>
+    <div id="leggiNuoviSqueal"  class="action">
+      <p id="chiudiFinestraLeggi" class="chiudiFinestra"><span id="chiudiFinestraLeggiSpan" class="chiudiFinestraText">_</span></p><br>
+      <p class="actions" id="leggiSquealWindowTitle">Leggi Squeal</p>
+      <div id="magicLeggiSqueal" class="magicWindow">
+        <p id="zeroSqueal4u">Non ci sono squeal da leggere</p>
+        <div class="nuovoSquealLettura" id="leggiSquealSample">
+          <div>
+            <p class="leggiSquealAuthor">Dante Alighieri da Tor Vergata</p>
+            <p class="nuovoMessaggioTag">NON LETTO</p>
+          </div>
+          <p class="dataLeggiSqueal">Lunedì 29 01 2024 10:41</p>
+          <div class="leggiSquealBody">"Cantami, o diva, del Pelìde Achille
+              l’ira funesta che infiniti addusse  lutti agli achei ,
+              molte anzi tempo all’orco generose travolse alme d’eroi,\n   
+              OOOOFFratè ho trovato sta poesiucola che m'incrina un pelo il crino, 
+              che nnne pensi suvvizio=?? famme sapè èèèh aspetto risposta... 
+          </div>
+        </div>
+        <div id="mentionInfo">
+          <p class="datiForm" id="menInfName">Nome: <br><br><span class="spanMention" id="mentionInfoName"></span></p>
+          <p class="datiForm" id="menInfDesc">Descrizione: <br><br><span class="spanMention" id="mentionInfoDescrizione"></span></p>
+          <p class="datiForm" id="menInfType">Usertype: <br><br><span class="spanMention" id="mentionInfoUsertype"></span></p>
+          <p class="datiForm" id="noInfoMention">
+            "Par non vi siano<br> informazioni,<br> un grande mistero<br>le avvolge,<br>e tale rimarrà."
+          </p>
+        </div>   
+      </div>
+    </div>
+    <form id="compraQuota"  class="action" method="PUT" onsubmit="return false">
+      <p id="chiudiFinestraQuota" class="chiudiFinestra"><span id="chiudiFinestraQuotaSpan" class="chiudiFinestraText">_</span></p><br>
+      <p class="actions" id="compraQuotaWindowTitle">Compra Quota</p>
+      <div id="magicCompraQuota" class="magicWindow">
+        <p>
+          <label for="intQuoteToBuy" class="datiForm">Quota da comprare: </label>
+          <input type="number" id="intQuoteToBuy" class="textField quoteToBuy" required="required"> 
+        </p> 
+        <p>
+          <label for="insertMoney" class="datiForm">Immetti del danaro: </label>
+          <input type="number" id="insertMoney" class="textField quoteToBuy" required="required">
+        </p>
+        <button id="compraQuotaSubmit">COMPRA</button>
+      </div>
+    </form>
+    <form id="iscrivitiCanali" class="action" method="PUT" onsubmit="return false">
+      <p id="chiudiFinestraCanali" class="chiudiFinestra"><span id="chiudiFinestraCanaliSpan" class="chiudiFinestraText">_</span></p><br>
+      <p class="actions" id="comprauotaWindowTitle">Iscriviti ai Canali</p>
+      <div id="magicIscrivitiCanali" class="magicWindow">
+        <p class="datiForm" id="elencoCanaliTitle">Elenco canali a cui iscriversi:
+        <span id="leMieIscrizioni">Le mie iscrizioni: </span></p>
+        <div id="contieniIscriversi" class="channelContainers">
+          <p id="channelIscriviti" class="elencoCanaliIscriviti">
+            <input type="checkbox" id="canaleDaIscriversi" class="canaliDaIscriversi"> 
+            <label for="canaleDaIscriversi" class="datiForm canale" ></label>
+          </p>  
+        </div>
+        <div id="contieniIscritti"  class="channelContainers">
+          <p class="datiForm canaleIscritto" id="channelIscritto"></p> 
+        </div>
+        <button id="iscrivitiCanaliSubmit">ISCRIVITI</button>
+      </div>
+    </form>
+    <form id="creaCanale"  class="action" method="POST" onsubmit="return false">
+      <p id="chiudiFinestraCreaCanale" class="chiudiFinestra"><span id="chiudiFinestraCreaCanaleSpan" class="chiudiFinestraText">_</span></p>
+      <br>
+      <p class="actions" id="creaCanaleWindowTitle">Crea un Canale</p>
+      <div id="magicCreaCanale" class="magicWindow">
+        <p id="inputChannelName">
+          <label for="channelNameInput" class="datiForm">Nome: </label>
+          <input type="text" class="textField" id="channelNameInput" maxlength="32" required="required">
+        </p>
+        <p>
+          <label for="channelDescrizione" class="datiForm">Descrizione: </label>
+          <input type="text" class="textField" id="channelDescrizione" maxlength="64">
+        </p>
+        <button id="creaCanaleSubmit">C R E A</button>
+      </div>
+    </form>
+    <form id="gestisciCanali"  class="action" method="PUT" onsubmit="return false">
+      <p id="chiudiFinestraGestisciCanali" class="chiudiFinestra"><span id="chiudiFinestraGestisciCanaliSpan" class="chiudiFinestraText">_</span></p><br>
+      <p class="actions" id="gestisciCanaliWindowTitle">Gestisci Canali</p>
+      <div id="magicGestisciCanali" class="magicWindow">
+        <p class="datiForm" id="elencoGestisciCanaliTitle">Seleziona un canale:
+        <span id="questioneUsernameTitle">Username: </span>
+        <span id="privilegeTitle">Modifica Privilegio: </span></p>
+        <div id="contieniGestisciCanali" class="channelContainers">
+          <p id="channelGestione" class="elencoGestisciCanali">
+            <input type="radio" id="canaleDaGestire" class="canaliDaGestire" name="radioGestisci" required> 
+            <label for="canaleDaGestire" class="datiForm canaleGestione" ></label>
+          </p>  
+        </div>
+        <div id="contieniTestoGestisciCanali">
+          <input type="text" class="textField" maxlength="32" id="gestisciCanaliInputUsername" required="required" placeholder="utente che vuoi modificare...">
+        </div>
+        <div id="radioContainer">
+          <label class="privilegiLabel" for="radioAggiungiParents">Aggiungi Genitore</label>
+          <input type="radio" name="radioPrivilege" id="radioAggiungiParents" value="addParent" required><br>
+          <label class="privilegiLabel" for="radioRimuoviParents">Rimuovi Genitore</label>
+          <input type="radio" name="radioPrivilege" id="radioRimuoviParents" value="remParent"><br><br>
+          <label class="privilegiLabel" for="radioAggiungiBlacklist">Aggiungi ListaNera</label>
+          <input type="radio" name="radioPrivilege" id="radioAggiungiBlacklist" value="addBlack"><br>
+          <label class="privilegiLabel" for="radioRimuoviBlacklist">Rimuovi ListaNera</label>
+          <input type="radio" name="radioPrivilege" id="radioRimuoviBlacklist" value="remBlack">
+        </div>
+        <button id="gestisciCanaliSubmit">MODIFICA</button>
+      </div>
+    </form>
+    <footer>
+      <p id='corp'>LADY TERYL CORPORATION©</p>
+    </footer>
+  </body>
+</html>

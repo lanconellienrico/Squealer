@@ -1,0 +1,95 @@
+html{
+    background-size: 100%;
+    text-align: center;
+    background-color: black;
+}
+body{
+    text-align: center;
+    font-family: 'Benguiat', serif;
+    color: white;
+    overflow-y: scroll;
+    margin: 50px;
+}
+img{
+    width: 100%;
+}
+h1{
+    font-weight: lighter;
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    text-shadow: 1.5px 1.5px 3px black;
+}
+p{  
+    text-shadow: 1.4px 1.3px 3px black;
+}
+button{
+    border: 1px solid gray;
+    border-radius: 2.5px;
+    padding: 5px 7.5px;
+    font-size: 15px;
+    font-family: 'Benguiat', serif;
+    color: black;
+    font-weight: 600;
+    transition: 0.25s box-shadow;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 12.5px rgb(175, 0, 0), -3px -3px 12.5px rgb(175, 0, 0), 
+    -3px 3px 12.5px rgb(175, 0, 0), 3px -3px 12.5px rgb(175, 0, 0);
+}
+button:active{
+    transform: scale(0.95);
+}
+#flee{
+    letter-spacing: 0.7px;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+}
+#flee:hover{
+    color: rgb(90, 0, 140);
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px purple;
+}
+
+
+/** footer **/
+footer{
+    position: fixed;
+    width: 92%;
+    top: 97%;
+  }
+  #corp{
+    font-size: 14px;
+    color: rgb(224, 224, 224);
+    text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+    margin: auto;
+    text-align: center;
+  }
+  #corp:hover{
+    cursor: default;
+  }
+  
+  /*scrollbar's shit
+  * width
+  */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.5);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.30);
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.4);
+  }
+  /* color of the tracking area */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.25);
+  }

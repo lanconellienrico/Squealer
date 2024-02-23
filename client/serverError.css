@@ -1,0 +1,80 @@
+html{
+    background-image: url("./pics/vultures.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+body{
+    margin: 0px;
+    text-align: left;
+    font-family: 'Benguiat', serif;
+    color: white;
+    margin-left: 25px;
+}
+h1{
+    font-weight: lighter;
+    font-size: 36px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    text-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+p{  
+    text-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+button{
+    border: 1px solid gray;
+    border-radius: 2.5px;
+    padding: 5px 7.5px;
+    font-size: 15px;
+    font-family: 'Benguiat', serif;
+    color: black;
+    font-weight: 600;
+    transition: 0.25s box-shadow;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px purple, -1px -1px 5px purple, -1px 1px 5px purple, 1px -1px 5px purple;
+}
+button:active{
+    transform: scale(0.95);
+}
+
+
+/** footer **/
+footer{
+    position: fixed;
+    width: 100%;
+    top: 97%;
+  }
+  #corp{
+    font-size: 14px;
+    color: rgb(224, 224, 224);
+    text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+    margin: auto;
+    text-align: center;
+  }
+  #corp:hover{
+    cursor: default;
+  }
+  
+  /*scrollbar's shit
+  * width
+  */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.5);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.30);
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.4);
+  }
+  /* color of the tracking area */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.25);
+  }

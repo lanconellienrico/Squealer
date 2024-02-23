@@ -1,0 +1,224 @@
+html{
+  background-image: url("./pics/v-shadow.jpg");
+  background-size: 100%;
+  text-align: center;
+}
+body{
+  margin: 0px;
+  text-align: center;
+  padding-bottom: 100%;
+  font-family: 'Benguiat', serif;
+}
+header{
+  height: 27.6px;
+  opacity: 0.5;
+  overflow: visible;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.25);
+  text-shadow: 1.5px 0.5px 2px black;
+  transition: 0.2s background-color;
+}
+header:hover{
+  opacity: 1;
+  background-color: rgba(0,0,0,0.40);
+}
+#textHeader{
+  margin-right: 20px;
+}
+#back{
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  border: 1px solid gray;
+  border-radius: 2.5px;
+  padding: 5px 7.5px;
+  font-size: 15px;
+  font-family: 'Benguiat', serif;
+  color: rgba(0,0,0,0.8);
+  font-weight: 600;
+  transition: 0.25s box-shadow;
+}
+#back:hover{
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 3px rgba(0,0,0,0.5), -0.5px -0.5px 3px rgba(0,0,0,0.5);
+}
+#back:active{
+  transform: scale(0.95);
+}
+h1{
+  margin:auto;
+  margin-top: 100px;
+  width: 400px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 48px;
+  letter-spacing: 5px;
+  color: white;
+  text-shadow: 1.5px 1.5px 2px black;
+  border-radius: 5px;
+}
+h1:hover{
+  cursor:default;
+}
+#navTitle{
+  width: 100%;
+  margin-top: 0px;
+  font-size: 24px;
+}
+form{
+  margin-top: 100px;
+  padding: 15px;
+}
+label{
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  margin-right: 10px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+input::placeholder{
+  font-size: 13px;
+  font-style: oblique;
+  font-family: serif;
+}
+.textField{
+  padding: 4px 7.5px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+}
+.textField:hover{
+  box-shadow: 0.5px 0.5px 2px gray;
+}
+.textField:focus{
+  border: 0.5px solid gray;
+  outline: none;
+  box-shadow: 0.5px 0.5px 2px gray, -0.5px -0.5px 1px gray, -0.5px 0.5px 1px gray, 0.5px -0.5px 1px gray;
+}
+#pwdLabel{
+  margin-right: 12.5px;
+}
+#seePassword{
+  z-index: 1;
+  opacity: 0.5;
+  visibility: hidden;
+  width: 17.5px;
+  height: 17.5px;
+  display: inline-block;
+  position: relative;
+  left: 130px;
+  bottom: 22px;
+  background-image: url('./pics/eye.png');
+  background-size: 100%;
+  transition: 0.25s opacity;
+}
+#seePassword:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
+#passwordParagraph{
+  margin-bottom: 0px;
+}
+#usertypeParagraph{
+  position: relative;
+  bottom: 20px;
+  right: 2.5px;
+  margin-top: 0px;
+}
+#usertypeLabel{
+  margin-right: 12.5px;
+}
+#usertype{
+  padding: 3.5px;
+  padding-left: 0px;
+  border-radius: 2.5px;
+  border: 0.5px solid gray;
+  transition: 0.25s;
+}
+#usertype:hover{
+  box-shadow: 0.5px 0.5px 2px gray;
+}
+#usertype:focus{
+  border: 0.5px solid gray;
+  outline: none;
+  box-shadow: 0.5px 0.5px 2px gray, -0.5px -0.5px 1px gray, -0.5px 0.5px 1px gray, 0.5px -0.5px 1px gray;
+}
+#codeLabel{
+  visibility: hidden;
+  font-size: 22px;
+  margin-right: 0px;
+}
+#code{
+  visibility: hidden;
+  width: 30px;
+}
+#submitButton{
+  letter-spacing: 2px;
+  font-family: 'Benguiat', serif;
+  color: rgba(0,0,0,0.8);
+  font-weight: 600;
+  padding: 5px 10px;
+  border: 0.5px solid gray;
+  border-radius: 2.5px;
+  transition: 0.25s box-shadow;
+}
+#submitButton:hover, #back:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 5px purple, -1px -1px 5px purple, -1px 1px 5px purple, 1px -1px 5px purple;
+}
+#submitButton:active{
+  transform: scale(0.95);
+}
+#logo{
+  display: inline-flex;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-image: url('./pics/logowhiteshadow.png');
+  background-size: 100%;
+}
+#hiddenGem{
+  width: 60px;
+}
+
+
+/** footer **/
+footer{
+  position: fixed;
+  width: 100%;
+  top: 97%;
+}
+#corp{
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+  margin: auto;
+  text-align: center;
+}
+#corp:hover{
+  cursor: default;
+}
+
+
+/*scrollbar's shit
+* width
+*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.30);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.4);
+}
+/* color of the tracking area */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.25);
+}

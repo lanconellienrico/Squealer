@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.cdnfonts.com/css/benguiat" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/benguiat');</style>
+    <script type="text/javascript" src="./home.js"></script>
+    <title>Squealer</title>
+  </head>
+  <body>
+    <header>
+      <div id='logo'></div>
+      <h1>SQUEALER</h1>
+      <img src="../pics/notificaWhite.png" id="squilloShape">
+      <img src="../pics/user.png" id="userShape" class="navShape">
+      <button id="viewerExit">E S C I</button>
+    </header>
+    <div id="profile">
+      <p id="username"></p>
+      <p id="nuovoMessaggio">NUOVO SQUEAL</p>
+      <p class="menu" id="profileLinkButton" title="private page"><a class="profileLink">il mio profilo</a></p>
+      <p class="menu" id="userExitButton" title="logout"><a class="profileLink">esci</a></p> 
+      <p class="menu" id="goToModerator" title="nerdMode"><a class="profileLink">Moderator Mode</a></p>
+    </div>
+    <div id='squilli'>
+      <div class='squilli' id="samplePanel">
+        <div class='profileBar'>
+          <img class='profilePic' src='../pics/unknown.jpg'></img>
+          <h2 class="author">Mariano Giusti</h2>
+          <h3 class="sexyData">12 Dicembre 2023 - 18.17</h3>
+          <img title='unpopular' target='unpopular' class='valutation' src='../pics/unp.png'></img>
+          <h4 class="channels">§canaletto</h4>
+        </div>
+        <div class='body'>L'amore infecondo e' all'origine di queste carriere,
+          la fornicazione pesante, la travisazione dei sensi.
+          Sono tutte carriere che nascono in certi alberghetti
+          a due stelle vicino alla stazione.
+          Momenti di squallore che diventano lavoro.
+          E' tutta gente presa dalla strada, ma no la strada
+          de giorno, la strada de notte, certi viali de Roma
+          che tu certamente conosci. E li' comincia.
+        </div>
+        <div class='reaction'>
+          <button id='admireButton' class="admireButton" title='ammiro'>O.o</button>
+          <button id='disgustButton' class="disgustButton" title='disgusto'>>.></button>
+          <div class="eye" id="eyed"></div>
+        </div>
+      </div>
+    </div>
+    <div id="mentionInfo">
+      <p class="datiForm" id="menInfName">Nome: <br><br><span class="spanMention" id="mentionInfoName"></span></p>
+      <p class="datiForm" id="menInfDesc">Descrizione: <br><br><span class="spanMention" id="mentionInfoDescrizione"></span></p>
+      <p class="datiForm" id="menInfType">Usertype: <br><br><span class="spanMention" id="mentionInfoUsertype"></span></p>
+      <p class="datiForm" id="noInfoMention">
+        "Par non vi siano<br> informazioni,<br> un grande mistero<br>le avvolge,<br>e tale rimarrà."
+      </p>
+    </div>
+    <footer>
+      <p id='corp'>LADY TERYL CORPORATION©</p>
+    </footer>
+  </body>
+</html>

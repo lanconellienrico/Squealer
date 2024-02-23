@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="registrazione.css">
+    <link href="https://fonts.cdnfonts.com/css/benguiat" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/benguiat');</style>
+    <script type="text/javascript" src="./registrazione.js"></script>
+    <title>Squealer</title>
+  </head>
+  <body>
+    <header>
+      <button id='back' onclick="location.href='accesso.html'">←</button>
+      <h1 id="navTitle">R E G I S T R A Z I O N E</h1>
+    </header>
+    <form method="POST" id='reg' onsubmit="return false">
+      <div id='logo'><a href="./vulture/vulture.html" id="hiddenGem"></a></div>
+      <p>
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" required="required" class="textField" placeholder="inserire username..." maxlength="32"><br>
+      </p>
+      <p id="passwordParagraph">
+        <label for="pwd" id='pwdLabel'>password</label>
+        <input type="password" id="pwd" name="pwd" required="required" class="textField" placeholder="inserire password..." maxlength="32">
+        <div id="seePassword"></div>
+      </p>
+      <p id="usertypeParagraph">
+        <label for="usertype" id="usertypeLabel">usertype</label>
+        <select name="usertype" id="usertype">
+          <option value="PLAIN">Plain</option>
+          <option value="VIP">VIP*</option>
+          <option value="MODERATOR">Moderator*</option>
+        </select>
+        <label for="code" id="codeLabel">*</label>
+        <input type="text" id='code' class="textField" placeholder="code" maxlength="4">
+      </p>
+      <input type="submit" value="Iscriviti" id='submitButton'>
+    </form>
+    <footer>
+      <p id='corp'>LADY TERYL CORPORATION©</p>
+    </footer>
+  </body>
+</html>

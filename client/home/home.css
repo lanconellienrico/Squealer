@@ -1,0 +1,464 @@
+html{
+  background-image: url("../pics/v-shadow.jpg");
+  background-size: 100%;
+  text-align: center;
+}
+body{
+  margin: 0px;
+  text-align: center;
+  padding-bottom: 100%;
+  margin-bottom: 400px;
+  font-family: 'Benguiat', serif;
+}
+header{
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  padding-left: 10px;
+  background-color: rgba(0,0,0,0.25);
+  transition: 0.2s background-color;
+}
+header:hover{
+  background-color: rgba(0,0,0,0.4);
+}
+h1{
+  margin:auto;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2.5vw;
+  color: white;
+  text-shadow: 1.5px 1.5px 2px black;
+  border-radius: 5px;
+  position: relative;
+  left: -2.1vw;
+}
+h1:hover{
+  cursor:default;
+}
+#logo{
+  float:left;
+  width: 60px;
+  height: 60px;
+  background-image: url('../pics/logowhiteshadow.png');
+  background-size: 100%;
+}
+#viewerExit{
+  display: none;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+.navShape{
+  border-radius: 7.5px;
+  position: fixed;
+  top: 0.75vh;
+  background-color: rgb(150, 150, 150);
+  transition: 0.25s background-color;
+  transition: 0.25s box-shadow;
+}
+.navShape:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(15, 15, 15);
+}
+#squilloShape{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right: 5vw;
+  top:0.25vh;
+}
+#userShape{
+  right: 0.75vw;
+  width: 55px;
+  height: 55px;
+}
+#userShape:active{
+  background-color: rgb(132, 132, 132);
+}
+#userlink{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.profileLink{
+  text-decoration: none;
+  color:white;
+}
+#profile{
+  visibility: hidden;
+  width: 20vw;
+  height: 30vh;
+  top: 10.5vh;
+  right: 1vw;
+  position: fixed;
+  border-radius: 5px;
+  transition: 0.25s box-shadow;
+  background-color: rgb(120,120,120);
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+}
+#profile:hover{
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+}
+#username{
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2.5px black;
+}
+#username:hover{
+  cursor: default;
+}
+.menu{
+  color: white;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  transition: 0.25s box-shadow;
+  background-color: rgb(75, 75, 75);
+  text-shadow: 1px 1px 2.5px rgb(25, 25, 25);
+}
+.menu:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 7.5px rgb(25, 25, 25);
+}
+.menu:active{
+  box-shadow: inset 0 0 12.5px rgb(25, 25, 25);
+}
+button{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 7.5px 10px;
+  font-size: 15px;
+  font-family: 'Benguiat', serif;
+  color: rgba(0,0,0,0.8);
+  font-weight: 600;
+  transition: 0.25s box-shadow;
+}
+button:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 5px purple, -1px -1px 5px purple, -1px 1px 5px purple, 1px -1px 5px purple;
+}
+button:active{
+  transform: scale(0.95);
+}
+#squilli{
+  border-radius: 7.5px;
+  padding: 25px;
+  width: 40vw;
+  height: 125vh;
+  float: left;
+  margin-left: 27.5vw;
+  margin-top: 100px;
+  overflow-y: scroll;
+}
+.squilli{
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 7.5px;
+  background-color: rgb(100,100,100);
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+  transition: 0.25s;
+}
+.squilli:hover{
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.5), inset 0 0 7.5px rgba(25,25,25,0.75);
+}
+h2{
+  text-shadow: 0.25px 0.25px 7px black;
+  font-weight: 400;
+  color: white;
+  font-size: 22px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-left: 60px;
+  text-align:left;
+  transition: 0.25s;
+  width: 20%;
+  padding-top: 10px;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow-x: visible;
+}
+h2:hover{
+  cursor: pointer;
+  text-shadow: none;
+}
+h3{
+  font-family: sans-serif;
+  color: rgb(235, 235, 235 );
+  text-align:left;
+  padding-left: 50px;
+  margin-left: 20px;
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-shadow: 0px 0px 5px black;
+}
+h3:hover{
+  cursor: default;
+}
+.profilePic{
+  margin-top: 5px;
+  margin-left: 7.5px;
+  float: left;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.valutation{
+  opacity: '0';
+  position: relative;
+  top: -58.5px;
+  right: 8px;
+  float: right;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: 0.25s;
+}
+.valutation[title='unpopular']{
+  border: 1px solid rgb(50, 0, 0);
+  background-color: rgb(250, 0, 0);
+  box-shadow: inset 0 0 7.5px rgb(100, 0, 0);
+}
+.valutation[title='unpopular']:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 7.5px rgb(100, 0, 0), inset 0 0 2.5px rgb(75, 0, 0);
+}
+.valutation[title='popular']{
+  border: 1px solid rgb(0,50,0);
+  background-color: rgb(0,160,0);
+  box-shadow: inset 0 0 5px rgb(0,100,0);
+}
+.valutation[title='popular']:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 5px rgb(0,100,0), inset 0 0 2.5px rgb(0,25,0);
+}
+.valutation[title='controversial']{
+  border: 1px solid rgb(25, 0, 25);
+  background-color: rgb(140, 0, 140);
+  box-shadow: inset 0 0 7.5px rgb(75, 0, 75);
+}
+.valutation[title='controversial']:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 7.5px rgb(75, 0, 75), inset 0 0 2.5px rgb(25, 0, 25);
+}
+
+.profileBar{
+  position: relative;
+  top: -10px;
+  border-radius: 50px;
+  background-color: rgba(224, 224, 224, 0.5);
+  width: 100%;
+  height: 62.5px;
+}
+.body{
+  color: rgb(235, 235, 235);
+  text-shadow: 1px 1px 1.5px black;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 0px 25px;
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 20px;
+}
+.admireButton{
+  color: white;
+  font-weight: lighter;
+  border: 1px solid rgb(0,50,0);
+  text-shadow: 1px 1px 2px rgb(0,25,0);
+  background-color: rgb(0, 110, 0);
+  transition: 0.25s box-shadow;
+}
+.admireButton:hover{
+  box-shadow: 0 0 5px yellowgreen;
+}
+.disgustButton{
+  color: white;
+  font-weight: lighter;
+  border: 1px solid rgb(50, 0, 0);
+  background-color: rgb(220, 0, 0);
+  text-shadow: 1px 1px 2px rgb(25, 0, 0);
+  margin-right: 5px;
+  transition: 0.25s box-shadow;
+}
+.disgustButton:hover{
+  box-shadow: 0 0 5px rgb(255, 170, 170);
+}
+.reaction{
+  height: 35px;
+  font-size: 18px;
+  color: rgb(235, 235, 235);
+  text-shadow: 1px 1px 1px black;
+  padding-bottom: 5px;
+}
+#nuovoMessaggio{
+  display: none;
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  letter-spacing: 0.5px;
+  color: white;
+  background-color: purple;
+  border-radius: 5px;
+  text-shadow: 0 0 5px black;
+}
+#goToModerator{
+  display: none;
+  margin-top: 10px;
+  background-color: rgb(90, 0, 90);
+  font-family: monospace;
+}
+#goToModerator:hover{
+  box-shadow: 0 0 7.5px inset rgb(30,0,30);
+}
+.eye{
+  opacity: '0';
+  background-image: url("../pics/eye.png");
+  background-size: 100%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  bottom: 20px;
+  transition: 1s opacity;
+}
+#samplePanel{
+  display : none;
+}
+.mentionLink{
+  text-decoration: none;
+  color: rgb(235, 50, 235);
+  font-family: Serif;
+  font-style: italic;
+  transition: 0.5s text-shadow;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgb(25, 25, 25);
+}
+.mentionLink:hover{
+  cursor: pointer;
+  text-shadow: 0 0 10px rgb(240, 100, 240), 1px 1px 3px black;
+}
+.mentionChannel{
+  color: rgb(180, 95, 250);
+}
+.mentionChannel:hover{
+  text-shadow: 0 0 10px rgb(200, 120, 240);
+}
+.spanMention{
+  font-size: 20px;
+  text-align: center;
+}
+#menInfDesc{
+  display: none;
+}
+#menInfType{
+  display: none;
+}
+#noInfoMention{
+  display: none;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-wrap: wrap;
+  font-weight: 200;
+  font-style: italic;
+  text-align: left;
+}
+#mentionInfoDescrizione{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: 14px;
+}
+#mentionInfo{
+  position:fixed;
+  height: 150px;
+  right: 5px;
+  bottom: 5px;
+  color: white;
+  opacity: 0;
+  padding: 5px;
+  text-align: justify;
+  width: 18vw;
+  border-radius: 5px;
+  background-color: rgb(40,40,40);
+  box-shadow: 0px 0px 5px rgb(10,10,10);
+  text-shadow: 1px 1px 2px rgb(15, 15, 15);
+  transition: 1s opacity;
+}
+.channels{
+  display : none;
+  position: relative;
+  bottom: 15px;
+  text-align: left;
+  margin-left: 70px;
+  width: 30vw;
+  font-size: 10px;
+  font-weight: lighter;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.5px 0.5px 2px rgb(50, 50, 50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** footer **/
+footer{
+  position: fixed;
+  width: 100%;
+  top: 97%;
+  z-index: -1;
+}
+#corp{
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  text-shadow: 1px 1px 1.5px rgba(0,0,0, 0.8);
+  margin: auto;
+  text-align: center;
+}
+#corp:hover{
+  cursor: default;
+}
+
+
+/*scrollbar
+* width
+*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.30);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.4);
+}
+/* color of the tracking area */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.25);
+}
+
+/*** squilli's scrollbar ***/
+#squilli::-webkit-scrollbar{
+  width: 0px;
+}
