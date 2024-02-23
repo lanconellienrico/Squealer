@@ -1,0 +1,13 @@
+com\SquealerServer\Channel\ChannelService.class
+com\SquealerServer\user\UserService.class
+com\SquealerServer\Channel\ChannelRepository.class
+com\SquealerServer\squeal\SquealService.class
+com\SquealerServer\user\User.class
+com\SquealerServer\Channel\ChannelController.class
+com\SquealerServer\Channel\Channel.class
+com\SquealerServer\squeal\Squeal.class
+com\SquealerServer\user\UserController.class
+com\SquealerServer\squeal\SquealController.class
+com\SquealerServer\user\UserRepository.class
+com\SquealerServer\squeal\SquealRepository.class
+com\SquealerServer\SquealerServerApplication.class
