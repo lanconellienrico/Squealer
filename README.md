@@ -1,5 +1,5 @@
 
------------------------- BENVENUTO A TE PRODE AVVENTURIERO ----------------------------------------------------------------------------
+------------------------ BENVENUTO A TE PRODE AVVENTURIERO ---------------------------------------------------------
 
 La redazione di Squealer ti omaggia e si allieta che un altro pellegrino abbia mosso i propri
 passi verso quel nido irto, ma confortevole, che a noi uccelli dalle grandi ali piace chiamare
